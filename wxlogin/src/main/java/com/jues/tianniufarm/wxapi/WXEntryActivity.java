@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.six.jues.salon.global.Global;
+import com.jues.tianniufarm.global.Global;
 import com.tencent.mm.opensdk.constants.ConstantsAPI;
 import com.tencent.mm.opensdk.modelbase.BaseReq;
 import com.tencent.mm.opensdk.modelbase.BaseResp;
@@ -44,7 +44,7 @@ public class WXEntryActivity extends AppCompatActivity implements IWXAPIEventHan
 
     @Override
     public void onReq(BaseReq baseReq) {
-        Log.d("Tag","请求回调");
+        Log.d("Tag", "请求回调");
 
         switch (baseReq.getType()) {
             case ConstantsAPI.COMMAND_GETMESSAGE_FROM_WX:

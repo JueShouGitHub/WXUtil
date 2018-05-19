@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WXUtils.onRegister(this, "wxe3c8a4a0d3b2ab42");
+        WXUtils.getSingle().onRegister(this, "wxe3c8a4a0d3b2ab42");
 
         findViewById(R.id.textView).setOnClickListener(v -> {
             View view = findViewById(R.id.rootView);
@@ -26,10 +26,9 @@ public class MainActivity extends AppCompatActivity {
             entity.setDescription("网页类型分享示例");
             entity.setUrl("http://www.baidu.com");
             entity.setImage(getResources(), R.drawable.herd_108);
-            SharePopup.showWebPopup(view, entity);
+            SharePopup.showWebPopup(view, entity,"wxe3c8a4a0d3b2ab42");
         });
         findViewById(R.id.button).setOnClickListener(v -> {
-            WXUtils.onRegister(this,"wxe3c8a4a0d3b2ab42");
             WXUtils.getSingle().onLogin();
         });
     }

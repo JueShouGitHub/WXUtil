@@ -43,7 +43,7 @@ public class WXUtils {
      * @param context
      * @param app_id
      */
-    public static void onRegister(Context context, String app_id) {
+    public void onRegister(Context context, String app_id) {
         Global.APP_ID = app_id;
         mApi = WXAPIFactory.createWXAPI(context, Global.APP_ID, true);
         mApi.registerApp(Global.APP_ID);

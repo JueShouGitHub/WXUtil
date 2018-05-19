@@ -75,8 +75,9 @@ public class SharePopup {
         });
     }
 
-    public static void showWebPopup(View rootView, ShareEntity entity) {
+    public static void showWebPopup(View rootView, ShareEntity entity,String appId) {
         showPopup(rootView, entity);
+        WXUtils.getSingle().onRegister(rootView.getContext(),appId);
         view1.setOnClickListener(v -> {
             WXUtils.getSingle().onShare(entity, SendMessageToWX.Req.WXSceneSession);
             popupWindow.dismiss();
