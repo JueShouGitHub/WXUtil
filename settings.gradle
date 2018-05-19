@@ -1,1 +1,1 @@
-include ':app', ':wxlogin'
+include ':app', ':wxlogin', ':alipaylibrary'
