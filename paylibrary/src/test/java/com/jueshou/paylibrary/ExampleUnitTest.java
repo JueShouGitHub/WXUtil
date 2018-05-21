@@ -1,4 +1,4 @@
-package com.jueshou.alipaylibrary;
+package com.jueshou.paylibrary;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.jueshou.alipaylibrary;
+package com.jueshou.paylibrary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
